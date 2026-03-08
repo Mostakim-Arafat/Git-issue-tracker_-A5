@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHUb-Issue-Traker</title>
+    <!-- favicon -->
+    <link rel="short icon" href="./assets/github-logo.png">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Hind+Siliguri:wght@300;400;500;600;700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link -->
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+    <header class="max-w-5/12 mx-auto my-10 border flex flex-col justify-center items-center space-y-4 p-4">
+
+        <div class="text-center">
+            <img class="mx-auto" src="./assets/github-logo.png" alt="">
+            <h1>GitHub Issues Tracker</h1>
+            <p>Sign in to manage your issues</p>
+        </div>
+
+        <div class="">
+            <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+                <label class="label">Username</label>
+                <input type="text" class="input" placeholder="Enter Username" id="username"/>
+                <p class="text-blue-600">Default: admin</p>
+                <label class="label">Password</label>
+                <input type="password" class="input" placeholder="Enter Password" id="password" />
+                <p class="text-blue-600">Default: admin123</p>
+                <button class="btn btn-primary mt-4" id="loginbtn">Sign in</button>
+            </fieldset>
+        </div>
+        <div class="w-full text-center">
+
+            <hr>
+            <span>or</span>
+            <p>Demo Credentials:</p>
+            <div class="w-11/12 text-center bg-base-200 rounded-xl">
+                <p>Username: admin</p>
+                <p>Password: admin123</p>
+            </div>
+
+        </div>
+    </header>
+<script src="login.js"></script>
+</body>
+
+</html>

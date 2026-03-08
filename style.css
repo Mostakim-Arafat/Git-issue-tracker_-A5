@@ -1,0 +1,29 @@
+*{
+     font-family: "Geist", sans-serif;
+}
+
+.active{
+     background-color: rgb(65, 65, 247);
+     color: white;
+}
+.red{
+     background-color: #FEECEC;
+     color: #EF4444;
+     
+}
+.yellow{
+      background-color: #FFF6D1;
+     color: #F59E0B;
+}
+.gray{
+      background-color: #EEEFF2;
+     color: #9CA3AF;
+}
+.b_green{
+     border-top:4px solid greenyellow;
+
+     
+}
+.b_purple{
+     border-top:4px solid plum;
+}
