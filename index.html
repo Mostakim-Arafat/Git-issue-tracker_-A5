@@ -43,12 +43,12 @@
                         <path d="m21 21-4.3-4.3"></path>
                     </g>
                 </svg>
-                <input type="search" required placeholder="Search" />
+                <input type="search" required placeholder="Search" id="search"/>
             </label>
             <button class="btn btn-md btn-primary">+ New issue</button>
         </div>
     </nav>
-
+   
     <!-- button -->
     <section class="my-4 p-2 rounded-md bg-white w-11/12 mx-auto " id="btn">
         <button class="btn shadow py-3" onclick="color('All')" id="All">All</button>
@@ -78,9 +78,15 @@
     </section>
 
     <!-- content -->
-    <section class="w-11/12 mx-auto bg-white grid grid-cols-2 p-3.5 gap-2 lg:grid-cols-4" id="content">
-        
+    <section class="w-11/12 mx-auto bg-white grid grid-cols-2   p-3.5   gap-2 lg:grid-cols-4" id="content">
+
     </section>
+    <!-- modal -->
+    <!-- Open the modal using ID.showModal() method -->
+
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        
+    </dialog>
 
     <script src="function.js"></script>
 </body>
