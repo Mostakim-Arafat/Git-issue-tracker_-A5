@@ -16,6 +16,7 @@ const issuecount = document.getElementById('issueCount')
 const contentP = document.getElementById('content')
 const popup = document.getElementById('my_modal_5')
 const search = document.getElementById('search')
+const spinner = document.getElementById('spinner')
 
 let arraydata = []
 
@@ -91,7 +92,9 @@ function modal(x) {
 
 }
 //main content
+spinner.classList.remove('hidden')
 function content(x) {
+    
     x.forEach(i => {
 
         const childcontent = document.createElement('div')
@@ -166,6 +169,7 @@ function content(x) {
 
         contentP.appendChild(childcontent)
     })
+    spinner.classList.add('hidden')
   
 }
 //search
