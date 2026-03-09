@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub issue</title>
+    <link rel="short icon" href="./assets/github-logo.png">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Hind+Siliguri:wght@300;400;500;600;700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="bg-base-200">
+    <!-- navbar -->
+    <nav class="p-2.5 bg-base-100 border border-b-gray-300 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10">
+                <img src="./assets/github-logo.png" alt="" class="w-full">
+            </div>
+            <h1 class="font-bold">GitHub Issues Tracker</h1>
+        </div>
+
+        <div class="flex gap-2">
+            <label class="input">
+                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                        stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </g>
+                </svg>
+                <input type="search" required placeholder="Search" id="search"/>
+            </label>
+            <button class="btn btn-md btn-primary">+ New issue</button>
+        </div>
+    </nav>
+   
+    <!-- button -->
+    <section class="my-4 p-2 rounded-md bg-white w-11/12 mx-auto " id="btn">
+        <button class="btn shadow py-3" onclick="color('All')" id="All">All</button>
+        <button class="btn shadow py-3" onclick="color('Open')" id="Open">Open</button>
+        <button class="btn shadow py-3" onclick="color('Closed')" id="Closed">Closed</button>
+    </section>
+
+    <!--issue count -->
+    <section class="flex justify-between w-11/12 items-center bg-base-100 rounded-t-md   mx-auto p-2 shadow mb-0.5">
+        <div class="flex justify-center items-center gap-2">
+            <img src="./assets/Aperture.png" alt="">
+            <div>
+                <h1><span id="issueCount">50</span> Issues</h1>
+                <p>Track and manage your project issues</p>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <div class="flex gap-2 items-center">
+                <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+                <p>Open</p>
+            </div>
+            <div class="flex gap-2 items-center">
+                <div class="w-2 h-2 bg-purple-700 rounded-full"></div>
+                <p>Closed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- content -->
+    <section class="w-11/12 mx-auto bg-white grid grid-cols-2   p-3.5   gap-2 lg:grid-cols-4" id="content">
+
+    </section>
+    <!-- modal -->
+    <!-- Open the modal using ID.showModal() method -->
+
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        
+    </dialog>
+
+    <script src="function.js"></script>
+</body>
+
+
+</html>
