@@ -32,27 +32,27 @@ function modal(x) {
     popup.innerHTML = `
         <div class="modal-box">
             <div>
-                <h1 class="font-bold">${x.title}</h1>
-                <div class="flex gap-6">
+                <h1 class="font-bold mb-2 text-2xl">${x.title}</h1>
+                <div class="flex gap-6 mb-2">
                     <div class="bg-green-500 text-white rounded-xl px-2">${x.status}</div>
 
                     <ul class="flex gap-7 list-disc" type="dot">
-                        <li>Opened by ${x.assignee}</li>
-                        <li>${x.createdAt}</li>
+                        <li>Opened by ${x.assignee ? x.assignee: 'Missing'}</li>
+                        <li>${x.createdAt.split('T')[0]}</li>
                     </ul>
 
                 </div>
-                <div class="px-3 flex gap-2 bug">
+                <div class=" flex gap-2 bug">
 
                 </div>
-                <p class="my-3">${x.description}</p>
+                <p class="my-3 text-gray-500">${x.description}</p>
                 <div class="flex p-3 gap-10 bg-base-200">
                     <div>
-                        <p>Assignee:</p>
-                        <p class="font-bold">${x.assignee}</p>
+                        <p class="text-gray-500">Assignee:</p>
+                        <p class="font-bold">${x.assignee ? x.assignee : 'Not found'}</p>
                     </div>
                     <div>
-                        <p>Priority:</p>
+                        <p class="text-gray-500">Priority:</p>
                         <div class="rounded-full px-2 ${x.priority === "high" ? 'red' : x.priority ==='medium' ? 'yellow' : 'gray'}">${x.priority}</div>
                     </div>
                 </div>

@@ -26,20 +26,20 @@
 </head>
 
 <body>
-    <header class="max-w-5/12 mx-auto my-10 border flex flex-col justify-center items-center space-y-4 p-4">
+    <header class="max-w-5/12 mx-auto my-10  flex flex-col justify-center items-center space-y-4 p-4 shadow-xl">
 
         <div class="text-center">
             <img class="mx-auto" src="./assets/github-logo.png" alt="">
-            <h1>GitHub Issues Tracker</h1>
-            <p>Sign in to manage your issues</p>
+            <h1 class="font-bold text-lg">GitHub Issues Tracker</h1>
+            <p class="text-gray-400 text-sm">Sign in to manage your issues</p>
         </div>
 
         <div class="">
             <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-                <label class="label">Username</label>
+                <label class="label text-black">Username</label>
                 <input type="text" class="input" placeholder="Enter Username" id="username"/>
                 <p class="text-blue-600">Default: admin</p>
-                <label class="label">Password</label>
+                <label class="label text-black">Password</label>
                 <input type="password" class="input" placeholder="Enter Password" id="password" />
                 <p class="text-blue-600">Default: admin123</p>
                 <button class="btn btn-primary mt-4" id="loginbtn">Sign in</button>
@@ -48,11 +48,11 @@
         <div class="w-full text-center">
 
             <hr>
-            <span>or</span>
-            <p>Demo Credentials:</p>
-            <div class="w-11/12 text-center bg-base-200 rounded-xl">
-                <p>Username: admin</p>
-                <p>Password: admin123</p>
+            <span>OR</span>
+            <p class="text-sm text-gray-400 my-3">Demo Credentials:</p>
+            <div class="w-11/12 text-center bg-base-200 rounded-xl mx-auto py-2">
+                <p class="text-sm"><span class="font-bold">Username:</span> admin</p>
+                <p class="text-sm"><span class="font-bold">Password: </span>admin123</p>
             </div>
 
         </div>
