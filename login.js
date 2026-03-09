@@ -5,7 +5,7 @@ const password = document.getElementById('password')
 const loginbtn = document.getElementById('loginbtn')
     loginbtn.addEventListener('click',function(){
     if( username.value === 'admin' && password.value === 'admin123'){
-        window.location.href = './index.html'
+        window.location.href = './main.html'
     }
     else{
         alert('try again')
